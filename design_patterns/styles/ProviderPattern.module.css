@@ -1,5 +1,5 @@
-html,
-body {
+.html,
+.body {
   margin: 0px;
 }
 
@@ -80,13 +80,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-ul {
+ul ul.list{
   padding: 0px;
   width: 90%;
   max-width: 500px;
 }
 
-li {
+li li.list{
   list-style: none;
   margin: 1rem;
   border: 1px solid grey;

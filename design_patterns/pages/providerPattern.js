@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import "../styles/styles.css";
+import "../styles/ProviderPattern.module.css";
 
 import List from "./api/List";
 import Toggle from "./api/Toggle";
