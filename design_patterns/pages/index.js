@@ -5,8 +5,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-import providerPattern from './providerPattern'
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -25,9 +23,14 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-        <p>
-          <Link href="providerPattern">
+        <p className={styles.card}>
+          <Link href="ProviderPattern" >
             <a>Provider Pattern</a>
+          </Link>
+        </p>
+        <p className={styles.card}>
+          <Link href="DogImages">
+            <a>Dog Images Hook</a>
           </Link>
         </p>
         <div className={styles.grid}>

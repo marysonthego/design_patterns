@@ -43,6 +43,7 @@
   background-color: #ccc;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 34px;
 }
 
 .slider:before {
@@ -72,25 +73,3 @@ input:checked + .slider:before {
   content: "☀️";
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-ul ul.list{
-  padding: 0px;
-  width: 90%;
-  max-width: 500px;
-}
-
-li li.list{
-  list-style: none;
-  margin: 1rem;
-  border: 1px solid grey;
-  padding: 1rem;
-  border-radius: 10px;
-  font-family: "Avenir Next";
-}
