@@ -33,6 +33,11 @@ export default function Home() {
             <a>Dog Images Hook</a>
           </Link>
         </p>
+        <p className={styles.card}>
+          <Link href="ObservablePattern">
+            <a>Observable Pattern</a>
+          </Link>
+        </p>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
