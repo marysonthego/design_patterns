@@ -29,13 +29,18 @@ observable.subscribe(toastify);
 export default function ObservablePattern() {
   return (
     <div className="App">
+      <h1>Observable Pattern</h1>
+      <div>
       <Button variant="contained" onClick={handleClick}>
         Click me!
       </Button>
+      </div>
+      <div>
       <FormControlLabel
         control={<Switch name="" onChange={handleToggle} />}
         label="Toggle me!"
       />
+      </div>
       <ToastContainer />
     </div>
   );

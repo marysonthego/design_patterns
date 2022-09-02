@@ -1,6 +1,5 @@
 import React from "react";
 import ListItem from "./ListItem";
-import { ThemeContext } from "../ProviderPattern";
 
 export default function Boxes() {
   return (

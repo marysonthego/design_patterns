@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -18,26 +17,32 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-        <p className={styles.card}>
-          <Link href="ProviderPattern" >
-            <a>Provider Pattern</a>
-          </Link>
-        </p>
-        <p className={styles.card}>
-          <Link href="DogImages">
-            <a>Dog Images Hook</a>
-          </Link>
-        </p>
-        <p className={styles.card}>
-          <Link href="ObservablePattern">
-            <a>Observable Pattern</a>
-          </Link>
-        </p>
+        <div className={styles.grid}>
+          <p className={styles.card}>
+            <Link href="ProviderPattern" >
+              <a>Provider Pattern</a>
+            </Link>
+          </p>
+          <p className={styles.card}>
+            <Link href="DogImagesHook">
+              <a>Dog Images Hook</a>
+            </Link>
+          </p>
+          <p className={styles.card}>
+            <Link href="ObservablePattern">
+              <a>Observable Pattern</a>
+            </Link>
+            </p>
+            <p className={styles.card}>
+            <Link href="/components/Es2015Modules">
+              <a>ES2015 Modules</a>
+            </Link>
+          </p>
+        </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>

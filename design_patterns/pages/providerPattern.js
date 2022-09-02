@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/ProviderPattern.module.css";
 
-import List from "./api/List";
-import Toggle from "./api/Toggle";
+import List from "./components/List";
+import Toggle from "./components/Toggle";
 
 export const themes = {
   light: {
@@ -28,6 +28,7 @@ export default function App() {
     <div className={`App theme-${theme}`}>
       <ThemeContext.Provider value={{ theme: themes[theme], toggleTheme }}>
         <>
+        <h1>Provider Pattern</h1>
           <Toggle />
           <List />
         </>
