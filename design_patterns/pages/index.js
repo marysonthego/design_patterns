@@ -43,7 +43,7 @@ export default function Home() {
             </Link>
           </p>
           <p className={styles.card}>
-            <Link href="/components/module-examples/basic-modules/main">
+            <Link href="/components/module-examples/basic-modules/BasicModules">
               <a>Basic Modules</a>
             </Link>
           </p>

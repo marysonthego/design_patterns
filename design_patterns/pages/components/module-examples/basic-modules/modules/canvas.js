@@ -9,13 +9,14 @@ const draw = (context) => {
   context.fillRect(30, 30, 50, 50);
 };
 
-const Canvas = ({draw, height, width}) => {
-  const canvas = React.useRef();
+const Canvas = ({height, width}) => {
+  let canvas;
 
   React.useEffect(() => {
+    canvas = React.useRef()
     const context = canvas.current.getContext('2d');
     draw(context);
-  });
+  }, []);
 
 return (
     <canvas ref={canvas} height={height} width={width} />
@@ -27,32 +28,15 @@ Canvas.propTypes = {
   width: PropTypes.number.isRequired,
 };
 
-// function create(id, parent, width, height) {
-//   let divWrapper = document.createElement('div');
-//   let canvasElem = document.createElement('canvas');
-//   parent.appendChild(divWrapper);
-//   divWrapper.appendChild(canvasElem);
 
-//   divWrapper.id = id;
-//   canvasElem.width = width;
-//   canvasElem.height = height;
+// function createReportList(wrapperId) {
+//   let list = document.createElement('ul');
+//   list.id = wrapperId + '-reporter';
 
-//   let ctx = canvasElem.getContext('2d');
+//   let canvasWrapper = document.getElementById(wrapperId);
+//   canvasWrapper.appendChild(list);
 
-//   return {
-//     ctx: ctx,
-//     id: id
-//   };
+//   return list.id;
 // }
 
-function createReportList(wrapperId) {
-  let list = document.createElement('ul');
-  list.id = wrapperId + '-reporter';
-
-  let canvasWrapper = document.getElementById(wrapperId);
-  canvasWrapper.appendChild(list);
-
-  return list.id;
-}
-
-export { Canvas, createReportList };
+export { Canvas };
