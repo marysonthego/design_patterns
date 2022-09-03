@@ -42,6 +42,11 @@ export default function Home() {
               <a>ES2015 Modules</a>
             </Link>
           </p>
+          <p className={styles.card}>
+            <Link href="/components/module-examples/basic-modules/main">
+              <a>Basic Modules</a>
+            </Link>
+          </p>
         </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
