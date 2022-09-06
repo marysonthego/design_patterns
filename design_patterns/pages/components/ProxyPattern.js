@@ -1,4 +1,4 @@
-// >node roxyPattern.js
+// >node ProxyPattern.js
 
 // Proxy use cases: validation, formatting, notifications, or debugging.
 // Overusing the Proxy object or performing heavy operations on each handler method invocation can negatively affect performance.

@@ -17,10 +17,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <h2 className={styles.description}>
+          <a href="https://www.patterns.dev/posts/#design-patterns">
+          Design Patterns
+          </a>
+        </h2>
         <div className={styles.grid}>
           <p className={styles.card}>
             <Link href="ProviderPattern" >
@@ -28,8 +29,8 @@ export default function Home() {
             </Link>
           </p>
           <p className={styles.card}>
-            <Link href="DogImagesHook">
-              <a>Dog Images Hook</a>
+            <Link href="DogImagesHookPattern">
+              <a>Dog Images Hook Pattern</a>
             </Link>
           </p>
           <p className={styles.card}>
